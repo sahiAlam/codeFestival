@@ -1,0 +1,324 @@
+/* Common CSS */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+img {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    font-family: 'Fredoka One', cursive;
+}
+p{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.container__mini {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+:root {
+    --backgroundPrimary: #ed078b;
+    --white: #fff;
+    --lightBackground: #fff2f9;
+    --darkBlue: #424187;
+    --lightBlue: #1a93c2;
+    --lightGreen: #1cd8da;
+    --yellow: #f3d110;
+    --textColor: #65667a;
+}
+.btn__primary {
+    padding: 1.5rem 4rem;
+    background: var(--lightGreen);
+    color: #fff;
+    border: 0.1rem solid var(--lightGreen);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 3rem;
+    text-transform: capitalize;
+}
+.btn__secondary {
+    padding: 0.8rem 2rem;
+    background: var(--lightBlue);
+    border: 0.1rem solid var(--lightBlue);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.btn__secondary:hover {
+    background: var(--backgroundPrimary);
+    color: var(--white);
+    border: 0.1rem solid var(--backgroundPrimary);
+}
+.btn__primary:hover{
+    background: var(--backgroundPrimary);
+    border: 0.1rem solid var(--backgroundPrimary);
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+/******************
+ Top Navbar Area CSS 
+*******************/
+.topbar__area {
+    background: var(--backgroundPrimary);
+    padding: 1rem 0;
+}
+.topbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar__content ul{
+    display: flex;
+    list-style: none;
+}
+.topbar__content ul li{
+    list-style: none;
+}
+.topbar__content ul li:last-child{
+    margin-left: 1.8rem;
+}
+.topbar__content ul li span i{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+.topbar__content ul li a{
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.topbar__links ul{
+    display: flex;
+}
+.topbar__links ul li{
+    margin-right: 1.5rem;
+    list-style: none;
+}
+.topbar__links ul li:last-child{
+    margin: 0;
+}
+.topbar__links ul li a{
+    font-size: 1.4rem;
+    color: var(--backgroundPrimary);
+}
+.topbar__links ul li a:hover{
+    color: var(--lightBlue);
+    transition: all 0.4s ease-in-out;
+}
+.topbar__links ul li a i{
+    display: block;
+    padding: 0.8rem;
+    background: var(--white);
+    border: 0.1rem solid var(--white);
+    border-radius: 50%;
+}
+.topbar__links ul li a i:hover{
+    background-color: var(--lightBlue);
+    border: 0.1rem solid var(--lightBlue);
+    color: var(--white);
+    transition: all 0.4s ease-in-out;
+}
+
+/********************
+ Main Nav Bar Area CSS
+ *******************/
+ .website__logo a span{
+    margin-right: -0.3rem;
+    display: inline-block;
+    font-size: 3.6rem;
+ }
+ .website__logo a span:first-child{
+    color: var(--lightBlue);
+ }
+ .website__logo a span:nth-child(2){
+    color: var(--backgroundPrimary);
+ }
+ .website__logo a span:nth-child(3){
+    color: var(--yellow);
+ }
+ .website__logo a span:last-child{
+    color: #1cd8da;
+ }
+ nav a{
+    font-size: 1.8rem;
+    color: var(--darkBlue);
+    margin: 0 2rem;
+}
+ nav a:hover{
+    color: var(--backgroundPrimary);
+}
+
+/* Banner Area CSS */
+.banner__container {
+    /* background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/banner.jpeg); */
+    width: 100%;
+    /* height: 100vh; */
+}
+.banner__container img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.8;
+    background: linear-gradient(100deg, rgba(63, 63, 63, 0.8) 0%, rgba(255, 255, 255, 0) 25%);
+}
+.slick-dots li {
+    display: none;
+}
+/* Welcome Area CSS  */
+.welcome__heading {
+    font-size: 4rem;
+    color: var(--darkBlue);
+    text-transform: capitalize;
+    padding: 2rem 0;
+}
+.welcome__text {
+    color: var(--textColor);
+    font-size: 1.4rem;
+}
+.welcome__container h2{
+    color: #424187;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.welcome__container p{
+    color: var(--textColor);
+    font-size: 1.4rem;
+}
+.welcome__container img{
+    border-radius: 0.5rem;
+    position: relative;
+}
+.welcome__container a{
+    margin: 1.5rem 0;
+}
+
+/* Course Area CSS */
+.background {
+    background: var(--lightBackground);
+}
+.course__intro {
+    /* width: 80rem; */
+    display: block;
+    margin: 0 auto;
+    margin-bottom:  7rem;
+}
+.course__intro h2{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--darkBlue);
+    text-transform: capitalize;
+}
+.course__intro p{
+    width: 66.66%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--textColor);
+    font-size: 1.4rem;
+}
+.course__area h2 {
+    color: #424187;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.course__area p{
+    color: var(--textColor);
+    font-size: 1.4rem;
+}
+
+
+/* Teacher Area CSS */
+.teacher__area h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--darkBlue);
+    text-transform: capitalize;
+    padding-top: 1.5rem;
+    letter-spacing: -0.05rem;
+}
+.teacher__area p {
+    color: var(--textColor);
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
+.techer__details h2 {
+    font-size: 1.6rem;
+    color: var(--darkBlue);
+    padding-top: 0.5rem;
+    text-transform: capitalize;
+}
+.techer__details h3 {
+    font-size: 1.4rem;
+    color: var(--lightBlue);
+    padding-top: 0.5rem;
+    text-transform: capitalize;
+}
+.techer__details p {
+    color: var(--textColor);
+    font-size: 1.3rem;
+}
+
+/* Testimonial Area CSS */
+.testimonial__text {
+    color: var(--darkBlue);
+    font-size: 4rem;
+}
+.testimonial__container p {
+    font-size: 1.4rem;
+    color: var(--textColor);
+}
+.testimonial__item_text span {
+    color: var(--darkBlue);
+    font-size: 1.5rem;
+}
+.testimonial__item_text span:last-child {
+    color: var(--lightBlue);
+    font-size: 1.3rem;
+}
+
+.gallery__intro {
+    width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+.gallery__intro h2{
+    font-size: 4rem;
+    color: var(--darkBlue);
+    text-align: center;
+    text-transform: capitalize;
+}
+.gallery__intro p{
+    width: 66.66%;
+    margin: 0 auto;
+    color: var(--textColor);
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer__background {
+    background: var(--lightBackground);
+}

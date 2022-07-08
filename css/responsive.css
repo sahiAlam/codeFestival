@@ -1,0 +1,133 @@
+/* 1200px */
+@media (max-width: 120rem) {
+    .container {
+        max-width: 100rem;
+    }
+    .container__mini {
+        max-width: 80rem;
+    }
+    html {
+        font-size: 56%;
+    }
+}
+
+/* 1024px */
+@media (max-width: 102.4rem) {
+    .welcome__text {
+        width: 70.55%;
+    }
+    .teacher__area p {
+        width: 70%;
+    }
+    html {
+        overflow-x: hidden;
+    }
+    .px-8 {
+        margin-bottom: 6rem;
+    }
+    nav a {
+        margin: 0 1rem;
+    }
+}
+
+/* 924px */
+@media (max-width: 92.4rem) {
+    .container {
+        max-width: 90rem;
+    }
+    .container__mini {
+        max-width: 60rem;
+    }
+    .welcome__text {
+        width: 70.55%;
+    }
+    .teacher__area p {
+        width: 70%;
+    }
+    html {
+        overflow-x: hidden;
+        font-size: 50.5%;
+    }
+    .px-8 {
+        margin-bottom: 6rem;
+    }
+    nav a {
+        margin: 0 .5rem;
+    }
+    .btn__primary {
+        margin: 0 auto;
+    }
+}
+
+
+/* 780px */
+@media (max-width: 78rem) {
+    .container {
+        max-width: 80rem;
+    }
+    .container__mini {
+        max-width: 60rem;
+    }
+    html {
+        font-size: 45.5%;
+    }
+    .topbar__links ul li a i {
+        padding: 0.6rem;
+    }
+
+    .btn__primary {
+        padding: 1.5rem 3rem;
+    }
+    .website__logo a span {
+        font-size: 3rem;
+    }
+    nav {
+        margin: 2rem 0;
+    }
+    .top__nav__main__container {
+        padding: 2rem;
+    }
+    .website__logo a {
+        margin: 0 auto;
+    }
+}
+
+
+/* 600px */
+@media (max-width: 60rem) {
+    .container {
+        max-width: 60rem;
+    }
+    .container__mini {
+        max-width: 50rem;
+    }
+    html {
+        font-size: 44.5%;
+    }
+}
+
+/* 480px */
+@media (max-width: 48rem) {
+    .container {
+        max-width: 54rem;
+    }
+    .container__mini {
+        max-width: 50rem;
+    }
+    html {
+        font-size: 42.5%;
+    }
+}
+
+/* 400px */
+@media (max-width: 48rem) {
+    .topbar__content ul li:first-child {
+        display: none;
+    }
+    .topbar__links ul{
+        margin-right: 0.5rem;
+    }
+    .topbar__links ul li{
+        margin-right: 1.2rem;
+    }
+}
