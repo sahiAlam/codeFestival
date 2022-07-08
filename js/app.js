@@ -14,7 +14,7 @@ $('.banner__container').slick({
   $('.testimonial__main__container').slick({
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: true, 
     speed: 400,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -46,4 +46,10 @@ $('.banner__container').slick({
       // settings: "unslick"
       // instead of a settings object
     ]
+  });
+
+  // Preloder
+  const loder = document.getElementById('preloder');
+  window.addEventListener("load",function() {
+    loder.style.display = "none";
   });

@@ -46,6 +46,7 @@ ul {
     --lightGreen: #1cd8da;
     --yellow: #f3d110;
     --textColor: #65667a;
+    --preloderBackground: #e5eff1;
 }
 .btn__primary {
     padding: 1.5rem 4rem;
@@ -99,6 +100,16 @@ ul {
 .teacher__area h2::after {
     top: 5rem;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--backgroundPrimary);
+}
+
 /******************
  Top Navbar Area CSS 
 *******************/
@@ -399,10 +410,10 @@ ul {
 .footer__logo__container a span:last-child{
     color: var(--lightGreen);
 }
-.footer__logo__container input[type='text']{
+.footer__logo__container input[type='email']{
     display: block;
     width: 100%;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border: none;
     outline: none;
     font-size: 1.4rem;
@@ -425,6 +436,10 @@ ul {
     border-radius: 0.5rem;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+}
+.footer__logo__container input[type='submit']:hover{
+    background: var(--lightBlue);
+    transition: all 0.4s ease-in-out;
 }
 .footer__inner__container h2 {
     margin-top: 1.5rem;
@@ -521,4 +536,17 @@ ul {
     font-size: 1.6rem;
     color: var(--lightBlue);
     text-align: center;
+    padding: 0 1rem;
+}
+
+/* Preloader */
+#preloder {
+    background: var(--preloderBackground) url(../images/preloder.gif);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12%;
 }
