@@ -6,7 +6,7 @@
     .container__mini {
         max-width: 80rem;
     }
-    html {
+    html{
         font-size: 56%;
     }
 }
@@ -49,13 +49,13 @@
         font-size: 50.5%;
     }
     .px-8 {
-        margin-bottom: 6rem;
-    }
-    nav a {
-        margin: 0 .5rem;
+        margin-bottom: 2rem;
     }
     .btn__primary {
         margin: 0 auto;
+    }
+    .course_-area {
+        margin-bottom: 2rem;
     }
 }
 
@@ -135,5 +135,11 @@
     }
     .topbar__links ul li{
         margin-right: 1.2rem;
+    }
+    .topbar__container {
+        padding:  0 1rem;
+    }
+    .course__intro h2, .teacher__area h2, .welcome__heading,.testimonial__text, .gallery__intro h2 {
+        font-size: 2.8rem;
     }
 }
