@@ -24,6 +24,11 @@ a {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .container {
     max-width: 120rem;
     margin: 0 auto;
@@ -74,7 +79,26 @@ a {
     color: #fff;
     transition: all 0.4s ease-in-out;
 }
-
+.course__intro h2, .teacher__area h2, .welcome__heading,.testimonial__text, .gallery__intro h2 {
+    position: relative;
+}
+.course__intro h2::after, .teacher__area h2::after, .welcome__heading::after,.testimonial__text::after, .gallery__intro h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 0.3rem;
+    background: var(--lightBlue);
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.welcome__heading::after,.teacher__area h2::after  {
+    top: 6rem;
+}
+.teacher__area h2::after {
+    top: 5rem;
+}
 /******************
  Top Navbar Area CSS 
 *******************/
@@ -164,9 +188,23 @@ a {
     font-size: 1.8rem;
     color: var(--darkBlue);
     margin: 0 2rem;
+    position: relative;
 }
- nav a:hover{
+ nav a::after{
+    content: '';
+    position: absolute;
+    background: var(--backgroundPrimary);
+    height: 0.3rem;
+    width: 0;
+    left: 0;
+    top: 2rem;
+}
+ nav a:hover, nav a.active{
     color: var(--backgroundPrimary);
+}
+ nav a:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Banner Area CSS */
@@ -201,8 +239,9 @@ a {
 }
 .welcome__container h2{
     color: #424187;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 1rem 0;
+    text-transform: capitalize;
 }
 .welcome__container p{
     color: var(--textColor);
@@ -238,6 +277,7 @@ a {
     margin: 0 auto;
     color: var(--textColor);
     font-size: 1.4rem;
+    padding-top: 0.8rem;
 }
 .course__area h2 {
     color: #424187;
@@ -282,6 +322,9 @@ a {
 }
 
 /* Testimonial Area CSS */
+.testimonial__section {
+    padding: 1rem 0 2.5rem;
+}
 .testimonial__text {
     color: var(--darkBlue);
     font-size: 4rem;
@@ -290,15 +333,32 @@ a {
     font-size: 1.4rem;
     color: var(--textColor);
 }
+.testimonial__container img {
+    width: 6rem;     
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .testimonial__item_text span {
     color: var(--darkBlue);
     font-size: 1.5rem;
+    padding: 0.2rem 0;
+    text-transform: uppercase;
 }
 .testimonial__item_text span:last-child {
     color: var(--lightBlue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
 }
-
+.p-8 {
+    padding: 3.5rem;
+    border-radius: 4rem;
+    box-shadow: 0.2rem 0 0.8rem 0 var(--textColor);
+}
+.slick-prev:before, .slick-next:before {
+    color: var(--darkBlue);
+}
+/* Gallery Area CSS */
 .gallery__intro {
     width: 80rem;
     margin: 0 auto;
@@ -319,6 +379,145 @@ a {
     padding: 1rem 0;
 }
 
+/* Footer Area CSS */
 .footer__background {
     background: var(--lightBackground);
+    padding: 8rem 0;
+}
+.footer__logo__container a{
+    font-size: 2.5rem;
+}
+.footer__logo__container a span:first-child{
+    color: var(--lightBlue);
+}
+.footer__logo__container a span:nth-child(2){
+    color: var(--backgroundPrimary);
+}
+.footer__logo__container a span:nth-child(3){
+    color: var(--yellow);
+}
+.footer__logo__container a span:last-child{
+    color: var(--lightGreen);
+}
+.footer__logo__container input[type='text']{
+    display: block;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--darkBlue);
+    margin: 1rem  0;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.footer__logo__container input[type='submit']{
+    display: block;
+    width: 60%;
+    padding: 0.4rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--white);
+    background: var(--backgroundPrimary);
+    text-transform: capitalize;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.footer__inner__container h2 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--darkBlue);
+    position: relative;
+    text-transform: capitalize;
+}
+.footer__inner__container h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25%;
+    background: var(--lightBlue);
+    height: 0.3rem;
+    top: 1.8rem;
+}
+.footer__inner__container ul {
+    margin-top: 2rem;
+}
+.footer__inner__container ul li {
+    margin-top: 0.5rem;
+}
+.footer__inner__container ul li a{
+    font-size: 1.6rem;
+    color: var(--textColor);
+    text-transform: capitalize;
+}
+.footer__inner__container ul li a:hover {
+    margin-left: 0.5rem;
+    color: var(--backgroundPrimary);
+    transition: all 0.3 ease-in-out;
+}
+.footer__map {
+    border: 0.3rem solid var(--textColor);
+}
+.footer__map iframe {
+    width: 100%;
+    height: 30rem;
+}
+.footer__social__container {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background: var(--darkBlue);
+    padding: 2rem 2rem;
+    border-radius: 10rem;
+    box-shadow: 0.1rem 0.1rem 2rem 0.1rem var(--textColor);
+    position: relative;
+}
+.footer__social__container::before {
+    content: '';
+    position: relative;
+    width: 100%;
+    background: var(--darkBlue);
+    height: 0.5rem;
+    display: block;
+    left: -40rem;
+    top: 2rem;
+}
+.footer__social__container::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    background: var(--darkBlue);
+    height: 0.5rem;
+    display: block;
+    left: 40rem;
+    bottom: 2rem;
+}
+.footer__social__container ul{
+    display: flex;
+    justify-content: center;
+}
+.footer__social__container ul li{
+    text-align: center;
+    margin:  0.8rem;
+}
+.footer__social__container ul li a{
+    background: var(--backgroundPrimary);
+    color: var(--white);
+    padding: 1.8rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.footer__social__container ul li a:hover{
+    color: var(--backgroundPrimary);
+    background: var(--white);
+}
+.footer__copyright p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    color: var(--lightBlue);
+    text-align: center;
 }

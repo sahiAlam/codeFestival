@@ -1,10 +1,10 @@
 /* 1200px */
 @media (max-width: 120rem) {
     .container {
-        max-width: 100rem;
+        /* max-width: 100rem; */
     }
     .container__mini {
-        max-width: 80rem;
+        /* max-width: 80rem; */
     }
     html{
         font-size: 56%;
@@ -28,12 +28,18 @@
     nav a {
         margin: 0 1rem;
     }
+    .footer__social__container::before,.footer__social__container::after {
+        display: none;
+    }
+    .footer__inner__container h2::after {
+        display: none;
+    }
 }
 
 /* 924px */
 @media (max-width: 92.4rem) {
     .container {
-        max-width: 90rem;
+        max-width: 100rem;
     }
     .container__mini {
         max-width: 60rem;
@@ -90,6 +96,15 @@
     .website__logo a {
         margin: 0 auto;
     }
+    .footer__social__container {
+        width: 80%;
+    }
+    .footer__inner__container {
+        margin-bottom: 2rem;
+    }
+    nav a::after{
+        display: none;
+    }
 }
 
 
@@ -100,9 +115,6 @@
     }
     .container__mini {
         max-width: 50rem;
-    }
-    html {
-        font-size: 44.5%;
     }
     .banner__container img{
         height: 36vh;
@@ -117,11 +129,11 @@
     .container__mini {
         max-width: 50rem;
     }
-    html {
-        font-size: 42.5%;
-    }
     .banner__container img{
         height: 26vh;
+    }
+    .footer__social__container {
+        width: 90%;
     }
 }
 
@@ -141,5 +153,8 @@
     }
     .course__intro h2, .teacher__area h2, .welcome__heading,.testimonial__text, .gallery__intro h2 {
         font-size: 2.8rem;
+    }
+    .slick-prev:before, .slick-next:before {
+        display: none;
     }
 }
