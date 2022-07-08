@@ -1,11 +1,5 @@
 /* 1200px */
 @media (max-width: 120rem) {
-    .container {
-        /* max-width: 100rem; */
-    }
-    .container__mini {
-        /* max-width: 80rem; */
-    }
     html{
         font-size: 56%;
     }
