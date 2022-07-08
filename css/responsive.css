@@ -104,6 +104,9 @@
     html {
         font-size: 44.5%;
     }
+    .banner__container img{
+        height: 36vh;
+    }
 }
 
 /* 480px */
@@ -116,6 +119,9 @@
     }
     html {
         font-size: 42.5%;
+    }
+    .banner__container img{
+        height: 26vh;
     }
 }
 
