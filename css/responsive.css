@@ -22,9 +22,7 @@
     nav a {
         margin: 0 1rem;
     }
-    .footer__social__container::before,.footer__social__container::after {
-        display: none;
-    }
+
     .footer__inner__container h2::after {
         display: none;
     }
@@ -56,6 +54,9 @@
     }
     .course_-area {
         margin-bottom: 2rem;
+    }
+    .footer__social__container::before,.footer__social__container::after {
+        display: none;
     }
 }
 
@@ -141,7 +142,7 @@
         height: 26vh;
     }
     .footer__social__container {
-        width: 90%;
+        width: 80%;
     }
     .footer__map iframe {
         width: 100%;
