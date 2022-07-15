@@ -495,7 +495,7 @@ ul {
 .footer__social__container::before {
     content: '';
     position: relative;
-    width: 100%;
+    width: 128%;
     background: var(--darkBlue);
     height: 0.5rem;
     display: block;
@@ -505,11 +505,11 @@ ul {
 .footer__social__container::after {
     content: '';
     position: relative;
-    width: 100%;
+    width: 128%;
     background: var(--darkBlue);
     height: 0.5rem;
     display: block;
-    left: 40rem;
+    left: 31rem;
     bottom: 2rem;
 }
 .footer__social__container ul{
