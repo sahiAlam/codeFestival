@@ -495,21 +495,21 @@ ul {
 .footer__social__container::before {
     content: '';
     position: relative;
-    width: 128%;
+    width: 110%;
     background: var(--darkBlue);
     height: 0.5rem;
     display: block;
-    left: -40rem;
+    left: -38rem;
     top: 2rem;
 }
 .footer__social__container::after {
     content: '';
     position: relative;
-    width: 128%;
+    width: 110%;
     background: var(--darkBlue);
     height: 0.5rem;
     display: block;
-    left: 31rem;
+    left: 35rem;
     bottom: 2rem;
 }
 .footer__social__container ul{
